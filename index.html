@@ -52,9 +52,15 @@
         }
 
         .profile-image {
-            width: 200px;
+            width: 600fpx;
             height: auto;
             margin-right: 2rem;
+        }
+
+        #about {
+            background-color: #f0f0f0;
+            min-height: 100vh;
+            padding: 2rem;
         }
 
         .home-text {
@@ -79,21 +85,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
+      <nav>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li> <!-- Add this line -->
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#projects">Projects</a></li>
+          </ul>
+      </nav>
     </header>
+
 
     <section id="home">
       <div class="home-content">
           <img src="myimage.jpeg" alt="Your Name" class="profile-image">
           <div class="home-text">
-              <h1>Your Name</h1>
-              <p>Your basic information</p>
+              <h1>Hi! I'm Chenrui Gu,</h1>
+              <p>an aspiring Software Engineer who has solid technical backgrounds and 
+                is always passionate about new technologies</p>
           </div>
       </div>
   </section>
@@ -107,6 +116,12 @@
         <h2>Projects</h2>
         <p>Here you can showcase your projects.</p>
     </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Here you can add information about yourself.</p>
+    </section>
+  
 
     <script src="main.js"></script>
 </body>
