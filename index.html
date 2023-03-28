@@ -22,6 +22,19 @@
             padding: 1rem 0;
             z-index: 1000;
         }
+        .social-icons {
+            margin-right: 1rem;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        .social-icons i {
+            font-size: 1.2rem;
+        }
         header ul {
             display: flex;
             justify-content: center;
@@ -36,9 +49,12 @@
             text-transform: uppercase;
         }
         section {
-            min-height: 100vh;
-            padding: 2rem;
+          min-height: 100vh;
+          padding: 2rem;
+          padding-top: calc(2rem + 60px); /* Add extra padding to the top */
+          margin-top: -60px; /* Add negative margin to counteract the extra padding */
         }
+
         #home {
             background-color: #f0f0f0;
         }
@@ -52,7 +68,7 @@
         }
 
         .profile-image {
-            width: 600fpx;
+            width: 350fpx;
             height: auto;
             margin-right: 2rem;
         }
@@ -93,6 +109,11 @@
               <li><a href="#projects">Projects</a></li>
           </ul>
       </nav>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/chenrui-g-995640131/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/gcr0107" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/chenrui8205" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </header>
 
 
