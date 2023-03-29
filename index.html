@@ -104,6 +104,51 @@
             font-size: 2rem;
             margin-bottom: 1rem;
         }
+
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 30px;
+            width: 4px;
+            background: #333;
+        }
+
+        .timeline-event {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-event:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 26px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #333;
+            z-index: 1;
+        }
+
+        .date {
+            position: absolute;
+            left: 0;
+            width: 30px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .content {
+            margin-left: 50px;
+        }
+
         
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
@@ -148,6 +193,22 @@
         and hands-on experiences in the software engineering industry.
         I am open to entry-level Software Engineering as well as ML/AI related positions. 
         Feel free to reach out to me at chenrui8205@gmail.com!</p>
+        <div class="timeline">
+          <div class="timeline-event">
+              <div class="date">2022</div>
+              <div class="content">
+                  <h3>Internship at Company A</h3>
+                  <p>Description of your experience at Company A.</p>
+              </div>
+          </div>
+          <div class="timeline-event">
+              <div class="date">2021</div>
+              <div class="content">
+                  <h3>Internship at Company B</h3>
+                  <p>Description of your experience at Company B.</p>
+              </div>
+          </div>
+      </div>
     </section>
 
     <section id="projects">
