@@ -77,10 +77,11 @@
             height: auto;
         }
 
-        nav ul li a {
-            color: #fff;
-            font-weight: 700;
-            text-transform: uppercase;
+        nav ul li a:hover {
+          color: #f0f0f0;
+          background-color: #333;
+          padding: 8px;
+          border-radius: 4px;
         }
 
         .home-text {
@@ -108,6 +109,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
     <header>
@@ -131,7 +133,7 @@
       <div class="home-content">
           <img src="myimage.jpeg" alt="Your Name" class="profile-image">
           <div class="home-text">
-              <h1>Hi! I'm Chenrui Gu,</h1>
+              <h1 data-aos="fade-up">Hi! I'm Chenrui Gu,</h1>
               <p>an aspiring Software Engineer who has solid technical backgrounds and 
                 is always passionate about new technologies.</p>
           </div>
@@ -139,7 +141,7 @@
   </section>
 
     <section id="about">
-      <h2>About Me</h2>
+      <h2 data-aos="fade-up">About Me</h2>
       <p>I am Chenrui (Nick) Gu, and I am a senior studying Computer Science at Cornell University. 
         I am interested designing highly scalable software system and finding creative ways to tackle complex computing problems. 
         I am a self-driven, motivated, and passionate engineer who has a diverse academic background 
@@ -149,17 +151,21 @@
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2 data-aos="fade-up">Projects</h2>
       <p>Here you can showcase your projects.</p>
     </section>
 
     <section id="resume">
-      <h2>Resume</h2>
+      <h2 data-aos="fade-up">Resume</h2>
       <p>Here you can describe your resume highlights and work experiences.</p>
       <a href="c_resume.pdf" download>Download my resume (PDF)</a>
     </section>
   
 
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
