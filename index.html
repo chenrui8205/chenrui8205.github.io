@@ -171,7 +171,7 @@
         }
 
         .project img:hover {
-          transform: scale(1.2); /* Scale the image up by 20% on hover */
+          transform: scale(1.1); /* Scale the image up by 20% on hover */
         }
             
         .project-info {
@@ -220,7 +220,44 @@
         }
 
         .timeline-event img:hover {
-          transform: scale(1.5); /* Scale the image up by 20% on hover */
+          transform: scale(1.2); /* Scale the image up by 20% on hover */
+        }
+
+        .skills-section {
+          width: 100%;
+        }
+
+        .tab {
+          display: inline-block;
+          background-color: #f1f1f1;
+          padding: 10px 20px;
+          cursor: pointer;
+          margin-right: 5px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          font-weight: bold;
+          transition: background-color 0.3s;
+        }
+
+        .tab:hover {
+          background-color: #ddd;
+        }
+
+        .tab-content {
+          display: none;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-top: none;
+          border-radius: 8px;
+        }
+
+        .tab-content ul {
+          padding-left: 20px;
+          list-style-type: disc;
+        }
+
+        .tab-content.visible {
+          display: block;
         }
         
     </style>
@@ -232,6 +269,16 @@
         function toggleDescription(id) {
           const element = document.getElementById(id);
           element.classList.toggle('visible');
+        }
+      </script>
+      <script>
+        function openTab(tabId) {
+          const tabs = document.querySelectorAll('.tab-content');
+          tabs.forEach(tab => {
+            tab.classList.remove('visible');
+          });
+          const activeTab = document.getElementById(tabId);
+          activeTab.classList.add('visible');
         }
       </script>
 </head>
@@ -272,7 +319,7 @@
         and hands-on experiences in the software engineering industry.
         I am open to entry-level Software Engineering as well as ML/AI related positions. 
         Feel free to reach out to me at chenrui8205@gmail.com!</p>
-        <div class="timeline">
+      <div class="timeline">
           <div class="timeline-event">
               <div class="content">
                   <h3>Expected graduation from Cornell University and the earliest date available for a full-time job</h3>
@@ -295,7 +342,55 @@
             <img src="rh.png" alt="rh Logo" class="school-logo">
         </div>
       </div>
+      <div class="tabs">
+        <div class="tab" onclick="openTab('languages')">Programming Languages</div>
+        <div class="tab" onclick="openTab('frameworks')">Frameworks</div>
+        <div class="tab" onclick="openTab('tools')">Tools</div>
+        <div class="tab" onclick="openTab('technologies')">Technologies</div>
+      </div>
+  
+      <div class="tab-content" id="languages">
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>C/C++</li>
+          <li>R</li>
+        </ul>
+      </div>
+  
+      <div class="tab-content" id="frameworks">
+        <ul>
+          <li>React.js</li>
+          <li>PyTorch</li>
+          <li>Spring Boot</li>
+          <li>Django</li>
+        </ul>
+      </div>
+  
+      <div class="tab-content" id="tools">
+        <ul>
+          <li>Git</li>
+          <li>Jira</li>
+          <li>VS Code</li>
+          <li>Jenkins</li>
+        </ul>
+      </div>
+  
+      <div class="tab-content" id="technologies">
+        <ul>
+          <li>RESTful APIs</li>
+          <li>Linux</li>
+          <li>AWS</li>
+          <li>Containers (Docker, Kubernetes)</li>
+        </ul>
+      </div>
     </section>
+    <script>
+      // Open the first tab by default
+      openTab('languages');
+    </script>
+  
 
     <section id="projects">
         <h2 data-aos="fade-up">Projects</h2>
