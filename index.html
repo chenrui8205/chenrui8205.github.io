@@ -166,16 +166,34 @@
 
         .project img {
             width: 100%;
-            max-width: 200px;
+            max-width: 400px;
             height: auto;
         }
             
-            .project-info {
+        .project-info {
             display: none;
         }
 
-            .project-info.visible {
+        .project-info.visible {
             display: block;
+        }
+
+        button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 10px 24px;
+        }
+
+        button:hover {
+        background-color: #45a049;
         }
         
     </style>
@@ -256,12 +274,15 @@
           <em>Java Developer</em>
           <img src="fe1.png" alt="File encryption manager application">
           <img src="fe2.png" alt="File encryption manager application">
-          <button onclick="toggleDescription('project1')">Toggle Description</button>
+          <button onclick="toggleDescription('project1')">See Description</button>
           <div class="project-info" id="project1">
             <ul>
-              <li>Designed and Developed a desktop software platform to assist users to securely handle confidential documents...
-              <li>Using Java, implemented the backend server and data processing for the application...
-              <li>Implemented backend functionalities to transfer encrypted/decrypted files...
+              <li>Designed and Developed a desktop software platform to assist users to securely handle confidential documents
+                (functionalities include file encryption/decryption and electronic signature generation).
+              <li>Using Java, implemented the backend server and data processing for the application. Built and tested reliable
+                RESTful APIs that allows the frontend to interact with backend data.
+              <li>Implemented backend functionalities to transfer encrypted/decrypted files between logged-in users on the platform.
+                Data communication enabled by Java Socket.
             </ul>
           </div>
         </div>
@@ -270,8 +291,12 @@
           <em>C Developer</em>
           <div class="project-info" id="project2">
             <ul>
-              <li>Designed and built an Assembly language interpreter program using C that parses in RISC-V instructions...
-              <li>Designed and implemented an auxiliary program using C that simulates the roles of caching...
+              <li>Designed and built an Assembly language interpreter program using C that parses in RISC-V instructions and
+                tokenizes them into appropriate subsections to compute the final state of each instruction. Implemented a memory
+                model to simulate the memory operations/caching happening in real hardware.
+              <li>Designed and implemented an auxiliary program using C that simulates the roles of caching in memory
+                management, and integrates the caching module with the RISC-V interpreter program to demonstrate caching
+                performance.
             </ul>
           </div>
         </div>
