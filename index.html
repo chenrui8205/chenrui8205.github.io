@@ -166,8 +166,12 @@
 
         .project img {
             width: 100%;
-            max-width: 600px;
+            max-width: 500px;
             height: auto;
+        }
+
+        .project img:hover {
+          transform: scale(1.2); /* Scale the image up by 20% on hover */
         }
             
         .project-info {
@@ -207,6 +211,12 @@
         #project2 ul {
           padding-left: 20px;
           list-style-type: disc; /* Add bullet points for the first project */
+        }
+
+        .school-logo {
+          max-width: 100px; /* Set a maximum width for the logo */
+          height: auto; /* Maintain the aspect ratio */
+          margin-left: 20px; /* Add some spacing between the content and the logo */
         }
         
     </style>
@@ -264,18 +274,21 @@
                   <h3>Expected graduation from Cornell University and the earliest date available for a full-time job</h3>
                   <p>05/2023</p>
               </div>
+              <img src="cornell.png" alt="Cornell University Logo" class="school-logo">
           </div>
           <div class="timeline-event">
               <div class="content">
                   <h3>Software Engineer Intern at Meta</h3>
                   <p>05/2022 - 08/2022</p>
               </div>
+              <img src="meta.png" alt="meta Logo" class="school-logo">
           </div>
           <div class="timeline-event">
             <div class="content">
                 <h3>Software Quality Engineering Intern at Red Hat, Inc.</h3>
                 <p>05/2021 - 08/2021</p>
             </div>
+            <img src="rh.png" alt="rh Logo" class="school-logo">
         </div>
       </div>
     </section>
