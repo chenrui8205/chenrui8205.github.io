@@ -166,20 +166,23 @@
 
         .project img {
             width: 100%;
-            max-width: 400px;
+            max-width: 600px;
             height: auto;
         }
             
         .project-info {
             display: none;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out; /* Add transition */
         }
 
         .project-info.visible {
-            display: block;
+            max-height: 1000px; /* Arbitrary large value */
+            transition: max-height 0.5s ease-in; /* Add transition */
         }
 
         button {
-        background-color: #4CAF50; /* Green */
+        background-color: blue; /* Green */
         border: none;
         color: white;
         text-align: center;
@@ -193,7 +196,7 @@
         }
 
         button:hover {
-        background-color: #45a049;
+        background-color: blueviolet;
         }
         
     </style>
