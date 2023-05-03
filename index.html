@@ -198,6 +198,14 @@
         button:hover {
         background-color: blueviolet;
         }
+
+        #project1 ul {
+          list-style-type: disc; /* Add bullet points for the first project */
+        }
+
+        #project2 ul {
+          list-style-type: disc; /* Add bullet points for the first project */
+        }
         
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
@@ -299,6 +307,23 @@
               <li>Designed and implemented an auxiliary program using C that simulates the roles of caching in memory
                 management, and integrates the caching module with the RISC-V interpreter program to demonstrate caching
                 performance.
+          </div>
+        </div>
+        <div class="project">
+          <h3>Competitive 2048 AI bot</h3>
+          <em>Python Developer</em>
+          <img src="comp2048.png" alt="Comp 2048">
+          <img src="comp2.png" alt="Comp 2048">
+          <button onclick="toggleDescription('project2')">See Description</button>
+          <div class="project-info" id="project2">
+            <ul>
+              <li>Designed a new version of the traditional 2048 game to make it more competitive, in which the human player
+                and a pre-trained AI bot take turns to make their moves on the board. Each's goal is to maximize its own score.
+              <li> Utilizing the AlphaZero framework and associated Python ML packages like PyTorch to self-train a AI model
+                that can effectively and strategically play the Comp2048 game. Monitor and analyze the model's performance
+                over time.
+              <li> Developed backend logic for the competitive 2048 game and integrate the AI model into the User Interface.
+            </ul>
           </div>
         </div>
       </section>
